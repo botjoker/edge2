@@ -47,6 +47,23 @@
 .product_gallery_extra {
   display: none;
 }
+
+.product_favorite .wish-icon-active,
+#count-wishlist .wish-icon-active {
+  display: none;
+}
+
+.product_favorite.active .wish-icon-active,
+#count-wishlist.active .wish-icon-active {
+  display: inline-block;
+}
+.product_favorite.active .wish-icon,
+#count-wishlist.active .wish-icon {
+  display: none;
+}
+
+
+
 @media(min-width: 1024px) {
     .hamburger.hamburger--emphatic {
       display: none;
@@ -217,4 +234,31 @@
     text-align: center;
     color: #656565;
     text-decoration: none !important;
+}
+footer.footer {
+  position: relative;
+  z-index: 2;
+}
+@media(max-width: 1200px) {
+  #product-gallery.more-images {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .image-item img {
+    width: 100%;
+  }
+  .image-item {
+    width: 40%;
+  }
+  .product_page .container {
+    width: 100%;
+  }
+  .top-right a, .top-left a {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 600px) {
+  .image-item { width: 100%; }
 }
