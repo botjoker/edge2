@@ -239,6 +239,18 @@ footer.footer {
   position: relative;
   z-index: 2;
 }
+.fancybox-slide>* {
+  overflow:visible !important;
+}
+.size-table__window .fancybox-close-small {
+  top: -40px;
+  right: -40px;
+  border-radius: 50%;
+  background: #FFF;
+}
+.fancybox-close-small:after {
+  font-size: 34px !important;
+}
 @media(max-width: 1200px) {
   #product-gallery.more-images {
     width: 100%;
