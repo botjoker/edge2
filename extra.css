@@ -17,6 +17,10 @@ div.header_link {
 div.header_link:hover .header_link__submenu {
     display: block;
 }
+div.header_link:hover>a {
+  border-bottom: 1px solid #000;
+}
+
 
 .header_link__submenu-col {
   width: 20%;
